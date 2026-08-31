@@ -1,0 +1,21 @@
+p {
+    font-size: 30px;
+    font-family: Arial ;
+    font-style: italic;
+}
+
+#nama {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+
+.bio {
+    color: red;
+    background-color: orange;
+}
+
+body {
+    background-color: black;
+}
