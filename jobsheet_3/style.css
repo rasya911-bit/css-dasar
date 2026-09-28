@@ -1,4 +1,5 @@
-* {
+*
+{
     box-sizing: border-box;
 }
 body {
@@ -66,13 +67,18 @@ nav {
 }
 
 .produk h2{
-    text-align: center;
+    align-items: center;
     margin-bottom: 30px;
 }
 
 .galery {
     display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax (220px, fr1));
     gap: 25px;
+}
+
+.galery {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .card {
@@ -85,8 +91,44 @@ nav {
 
 .card h3{
     margin-bottom: 5px;
+    color: #f4f4f4;
+    height: 50px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .card p{
-    color:#f4f4f4
+    color:#f4f4f4;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.card strong{
+    margin-top: auto;
+    font-size: 18px;
+}
+
+.card button {
+    width: 100%;
+    margin-top: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 8px;
+    background-color: #222;
+    color: white;
+}
+.sosial {
+    display: flex;
+    gap: 20px;
+}
+.sosial a{
+    color: white;
+    text-decoration: none;
 }
